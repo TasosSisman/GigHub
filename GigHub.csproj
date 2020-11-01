@@ -177,9 +177,16 @@
     <Compile Include="Migrations\202011011152043_Initial migration.Designer.cs">
       <DependentUpon>202011011152043_Initial migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011012248168_AddedGigAndGenreModels.cs" />
+    <Compile Include="Migrations\202011012248168_AddedGigAndGenreModels.Designer.cs">
+      <DependentUpon>202011012248168_AddedGigAndGenreModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Gig.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -260,6 +267,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202011011152043_Initial migration.resx">
       <DependentUpon>202011011152043_Initial migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011012248168_AddedGigAndGenreModels.resx">
+      <DependentUpon>202011012248168_AddedGigAndGenreModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
