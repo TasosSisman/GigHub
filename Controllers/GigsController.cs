@@ -35,6 +35,7 @@ namespace GigHub.Controllers
 		{
             if (!ModelState.IsValid)
 			{
+                viewModel.Genres = _context.Genres.ToList();
                 return View("Create", viewModel);
 			}
 
