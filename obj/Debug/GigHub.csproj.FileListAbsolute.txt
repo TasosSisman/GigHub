@@ -110,3 +110,4 @@ C:\Users\Tasos\Desktop\Courses\GigHub\obj\Debug\GigHub.Migrations.Initialmigrati
 C:\Users\Tasos\Desktop\Courses\GigHub\obj\Debug\GigHub.csproj.GenerateResource.cache
 C:\Users\Tasos\Desktop\Courses\GigHub\obj\Debug\GigHub.Migrations.AddedGigAndGenreModels.resources
 C:\Users\Tasos\Desktop\Courses\GigHub\obj\Debug\GigHub.Migrations.PopulateGenresTable.resources
+C:\Users\Tasos\Desktop\Courses\GigHub\obj\Debug\GigHub.Migrations.AddedNameToApplicationUser.resources

@@ -186,6 +186,10 @@
     <Compile Include="Migrations\202011012252052_PopulateGenresTable.Designer.cs">
       <DependentUpon>202011012252052_PopulateGenresTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011020240078_AddedNameToApplicationUser.cs" />
+    <Compile Include="Migrations\202011020240078_AddedNameToApplicationUser.Designer.cs">
+      <DependentUpon>202011020240078_AddedNameToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -282,6 +286,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011012252052_PopulateGenresTable.resx">
       <DependentUpon>202011012252052_PopulateGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011020240078_AddedNameToApplicationUser.resx">
+      <DependentUpon>202011020240078_AddedNameToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
