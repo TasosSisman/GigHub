@@ -110,8 +110,13 @@ h6,
 	border-radius: 9px;
 }
 
-/* Page-level styles */
+.js-toggle-attendance {
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 1.5;
+}
 
+/* Page-level styles */
 .gigs {
 	list-style: none;
 }

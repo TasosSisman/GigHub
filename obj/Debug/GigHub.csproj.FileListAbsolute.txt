@@ -118,3 +118,4 @@ C:\Users\Tasos\Desktop\Courses\GigHub\bin\System.Web.Http.WebHost.dll
 C:\Users\Tasos\Desktop\Courses\GigHub\bin\System.Net.Http.Formatting.xml
 C:\Users\Tasos\Desktop\Courses\GigHub\bin\System.Web.Http.xml
 C:\Users\Tasos\Desktop\Courses\GigHub\bin\System.Web.Http.WebHost.xml
+C:\Users\Tasos\Desktop\Courses\GigHub\obj\Debug\GigHub.Migrations.AddFollowing.resources
