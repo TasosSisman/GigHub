@@ -8,7 +8,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace GigHub.Controllers
+namespace GigHub.Controllers.apis
 {
 	public class FollowsController : ApiController
 	{
@@ -25,7 +25,7 @@ namespace GigHub.Controllers
 		{
 			var userId = User.Identity.GetUserId();
 
-			if(_context.Followings.Any(f => f.FollowerId == userId && f.FolloweeId == dto.FolloweeId))
+			if (_context.Followings.Any(f => f.FollowerId == userId && f.FolloweeId == dto.FolloweeId))
 			{
 				return BadRequest("Already Following.");
 			}

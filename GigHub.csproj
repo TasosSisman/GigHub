@@ -178,12 +178,24 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\apis\GigsController.cs" />
     <Compile Include="Controllers\FolloweesController.cs" />
+    <Compile Include="Migrations\202011031043059_AddCancelPropToGig.cs" />
+    <Compile Include="Migrations\202011031043059_AddCancelPropToGig.Designer.cs">
+      <DependentUpon>202011031043059_AddCancelPropToGig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011031230273_AddNotifications.cs" />
+    <Compile Include="Migrations\202011031230273_AddNotifications.Designer.cs">
+      <DependentUpon>202011031230273_AddNotifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserNotification.cs" />
+    <Compile Include="Models\Notification.cs" />
+    <Compile Include="Models\NotificationType.cs" />
     <Compile Include="ViewModels\GigsViewModel.cs" />
     <Compile Include="Dtos\FollowDto.cs" />
-    <Compile Include="Controllers\FollowsController.cs" />
+    <Compile Include="Controllers\apis\FollowsController.cs" />
     <Compile Include="Dtos\AttendanceDto.cs" />
-    <Compile Include="Controllers\AttendancesController.cs" />
+    <Compile Include="Controllers\apis\AttendancesController.cs" />
     <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -246,6 +258,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -331,6 +344,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011021123472_AddFollowing.resx">
       <DependentUpon>202011021123472_AddFollowing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011031043059_AddCancelPropToGig.resx">
+      <DependentUpon>202011031043059_AddCancelPropToGig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011031230273_AddNotifications.resx">
+      <DependentUpon>202011031230273_AddNotifications.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

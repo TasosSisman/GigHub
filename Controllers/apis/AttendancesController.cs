@@ -8,13 +8,13 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace GigHub.Controllers
+namespace GigHub.Controllers.apis
 {
 
 	[Authorize]
-    public class AttendancesController : ApiController
-    {
-        private readonly ApplicationDbContext _context;
+	public class AttendancesController : ApiController
+	{
+		private readonly ApplicationDbContext _context;
 
 		public AttendancesController()
 		{
@@ -22,11 +22,11 @@ namespace GigHub.Controllers
 		}
 
 		[HttpPost]
-        public IHttpActionResult Attend(AttendanceDto dto)
+		public IHttpActionResult Attend(AttendanceDto dto)
 		{
 			var userId = User.Identity.GetUserId();
 
-			if(_context.Attendances.Any(a => a.AttendeeId == userId && a.GigId == dto.GigId))
+			if (_context.Attendances.Any(a => a.AttendeeId == userId && a.GigId == dto.GigId))
 			{
 				return BadRequest("The attendance already exists.");
 			}
@@ -42,5 +42,5 @@ namespace GigHub.Controllers
 
 			return Ok();
 		}
-    }
+	}
 }

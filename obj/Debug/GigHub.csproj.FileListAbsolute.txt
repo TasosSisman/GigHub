@@ -119,3 +119,5 @@ C:\Users\Tasos\Desktop\Courses\GigHub\bin\System.Net.Http.Formatting.xml
 C:\Users\Tasos\Desktop\Courses\GigHub\bin\System.Web.Http.xml
 C:\Users\Tasos\Desktop\Courses\GigHub\bin\System.Web.Http.WebHost.xml
 C:\Users\Tasos\Desktop\Courses\GigHub\obj\Debug\GigHub.Migrations.AddFollowing.resources
+C:\Users\Tasos\Desktop\Courses\GigHub\obj\Debug\GigHub.Migrations.AddCancelPropToGig.resources
+C:\Users\Tasos\Desktop\Courses\GigHub\obj\Debug\GigHub.Migrations.AddNotifications.resources

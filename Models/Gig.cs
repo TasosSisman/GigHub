@@ -10,6 +10,8 @@ namespace GigHub.Models
 	{
 		public int Id { get; set; }
 
+		public bool IsCanceled { get; set; }
+
 		public DateTime DateTime { get; set; }
 
 		[Required]
