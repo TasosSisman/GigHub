@@ -2,6 +2,7 @@
 using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -23,35 +24,16 @@ namespace GigHub.Controllers.apis
 		public IHttpActionResult Cancel(int id)
 		{
 			var userId = User.Identity.GetUserId();
-			var gig = _context.Gigs.Single(g => g.Id == id && g.ArtistId == userId);
+			var gig = _context.Gigs
+				.Include(g => g.Attendances.Select(a => a.Attendee))
+				.Single(g => g.Id == id && g.ArtistId == userId);
 
 			if (gig.IsCanceled)
 			{
 				return NotFound();
 			}
 
-			gig.IsCanceled = true;
-
-			var notification = new Notification
-			{
-				Type = NotificationType.GigCanceled,
-				DateTime = DateTime.Now,
-				Gig = gig
-			};
-
-			var attendeeIds = _context.Attendances
-				.Where(a => a.GigId == gig.Id)
-				.Select(a => a.AttendeeId)
-				.ToList();
-
-			foreach (var attendeeId in attendeeIds)
-			{
-				var userNotification = new UserNotification
-				{
-					UserId = attendeeId,
-					NotificationId = notification.Id
-				};
-			}
+			gig.Cancel();
 
 			_context.SaveChanges();
 
